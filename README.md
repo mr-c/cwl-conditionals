@@ -16,7 +16,7 @@ Also see [setup.sh](setup.sh)
 - Install Toil from `kaushik-work/toil`  `kaushik/conditionals/when` branch
 - Install CWL tool `pa/conditionals` branch
 - Checkout the test scripts and test files
-- Run them with `cwltoil` 
+- Run them with `toil-cwl-runner` 
 
 
 Due to the vagaries of python's setup infrastructure, you have to do the following state dependent steps
@@ -28,7 +28,7 @@ git checkout kaushik/conditionals/when
 pip install -e .[cwl]
 cd ..
 
-toil --version  # should read 3.21.0a1
+toil-cwl-runner --version  # should read 3.21.0a1
 
 # cwltool has to be installed from a clone. Not clear to me why
 # has something to do with the schema not being properly installed I think
